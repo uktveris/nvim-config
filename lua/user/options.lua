@@ -1,6 +1,9 @@
+-- shorthand
 local o = vim.opt
 
-print("Options.lua is being loaded!")
+-- debug purposes
+-- print("Options.lua is being loaded!")
+
 -- clipboard options
 o.clipboard = "unnamedplus"
 
