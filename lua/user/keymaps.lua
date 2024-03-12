@@ -48,5 +48,3 @@ k('n', '<S-x>', ':split<CR>', opts)
 k('v', '<', '<gv', opts)
 k('v', '>', '>gv', opts)
 
-
-
