@@ -12,17 +12,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup {
-  spec = SPECIFICATION,
-  install = {
-    colorscheme = { "alduin", "default" },
-  },
-  ui = {
-    border = "rounded",
-  },
-  change_detection = {
-    enabled = true,
-    notify = true,
-  },
+    spec = SPECIFICATION,
+    install = {
+        colorscheme = { "alduin", "default" },
+    },
+    ui = {
+        border = "rounded",
+    },
+    change_detection = {
+        enabled = true,
+        notify = true,
+    },
 }
 
 -- debug purposes

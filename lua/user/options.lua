@@ -28,6 +28,8 @@ o.updatetime = 400
 --tabs
 o.expandtab = true
 o.showtabline = 1
+o.tabstop = 4
+o.shiftwidth = 4
 
 -- popup
 o.pumheight = 10
