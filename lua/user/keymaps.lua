@@ -1,6 +1,6 @@
 local opts = {noremap = true, silent = true}
---local k = vim.api.nvim_set_keymap
-local k = vim.keymap.set
+local k = vim.api.nvim_set_keymap
+--local k = vim.keymap.set
 
 -- allows copy and paste
 vim.cmd([[set clipboard+=unnamedplus]])
