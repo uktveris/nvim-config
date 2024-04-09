@@ -1,10 +1,12 @@
-require("user.spec")
+-- /nvim is also in a rtp;
+-- everything that is inside init.lua
+-- is called upon running
+
+-- nvim tree configuration
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 require("user.options")
 require("user.keymaps")
-spec("user.colorscheme")
-spec("user.devicons")
-spec("user.lualine")
-spec("user.treesitter")
-spec("user.comment")
-spec("user.mason")
 require("user.lazy")
+require("user.pluginspec")

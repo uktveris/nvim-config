@@ -1,3 +1,17 @@
+-- vim variable tables (not used if u are not nvim plugin dev)
+-- vim.b = current buffer scope variables
+-- vim.w = currentwindow scope variables
+-- vim.t = current tab scope variables
+-- vim.g = vim global scope variables (can be accessed from anywhere)
+
+-- vim option tables
+-- vim.bo = current buffer options
+-- vim.wo = current window options
+-- vim.to = current tab options
+-- vim.o = vim global scope options
+-- (does not specify the scope for nothing)
+
+
 local opts = {noremap = true, silent = true}
 local k = vim.api.nvim_set_keymap
 --local k = vim.keymap.set
@@ -34,7 +48,8 @@ k('n', '<C-Left>', ':vertical resize +2<CR>', opts)
 k('n', '<C-Right>', ':vertical resize -2<CR>', opts)
 
 -- open lexplorer  (explorer on the side, number shows how big explorer is)
-k('n', '<leader>e', ':Lex 25<cr>', opts)
+-- commented out to use nvim tree (same keymap)
+--k('n', '<leader>e', ':Lex 25<cr>', opts)
 
 -- navigate buffers
 --k('n', '<S-l>', ':bnext<CR>', opts)
@@ -47,4 +62,3 @@ k('n', '<S-x>', ':split<CR>', opts)
 -- visual mode
 k('v', '<', '<gv', opts)
 k('v', '>', '>gv', opts)
-

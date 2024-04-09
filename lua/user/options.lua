@@ -1,51 +1,37 @@
--- shorthand
 local o = vim.opt
 
--- debug purposes
--- print("Options.lua is being loaded!")
+-- numbers
+o.number = true
+o.relativenumber = true
+o.signcolumn = "yes"
 
--- clipboard options
+-- window splitting
+o.splitbelow = true
+o.splitright = true
+
+-- disable wrapping
+o.wrap = false
+
+-- fixing tabs
+o.expandtab = true
+o.tabstop = 4
+o.shiftwidth = 4
+
 o.clipboard = "unnamedplus"
 
--- cmp
-o.completeopt = {"menuone", "noselect"}
+-- scrolloff: how many lines till the screen has to move
+--o.scrolloff = 5
+
+-- mouse
+o.mouse = "a"
 
 --search
 o.hlsearch = true
 o.ignorecase = true
 o.smartcase = true
 
--- window management
-o.splitbelow = true
-o.splitright = true 
-
--- more colors
+-- enabling more colors
 o.termguicolors = true
 
--- faster completion
-o.updatetime = 400
-
---tabs
-o.expandtab = true
-o.showtabline = 1
-o.tabstop = 4
-o.shiftwidth = 4
-
--- popup
-o.pumheight = 10
-o.pumblend = 10
-
--- mouse
-o.mouse = "a"
-
-
---lines & columns
-o.number = true
-o.signcolumn = "yes"
-o.wrap = false
-
--- markdown
+-- markdown stuff
 o.conceallevel = 0
-
--- undo
-o.undofile = true
