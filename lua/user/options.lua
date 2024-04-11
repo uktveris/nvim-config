@@ -1,3 +1,6 @@
+-- Options setup
+-- =============
+
 local o = vim.opt
 
 -- numbers
@@ -18,6 +21,7 @@ o.tabstop = 4
 o.shiftwidth = 4
 
 o.clipboard = "unnamedplus"
+-- o.clipboard:append("unnamedplus")
 
 -- scrolloff: how many lines till the screen has to move
 --o.scrolloff = 5

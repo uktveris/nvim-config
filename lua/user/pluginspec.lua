@@ -1,6 +1,0 @@
-require("plugins.colorscheme")
-require("plugins.treesitter")
-require("plugins.lsp")
-require("plugins.devicons")
-require("plugins.lualine")
-require("plugins.nvim-tree")

@@ -40,28 +40,16 @@ vim.opt.rtp:prepend(lazypath)
 -- return {"AlessandroYorba/Alduin", config = 
 -- function() require whatever}
 --------------------------------
-require("lazy").setup({
-    { "AlessandroYorba/Alduin" },
---    alternative colorscheme
-    { "rebelot/kanagawa.nvim" },
-    { "nvim-treesitter/nvim-treesitter" },
-    { "neovim/nvim-lspconfig" },
-    { "williamboman/mason.nvim" },
-    {
-        "williamboman/mason-lspconfig.nvim",
+
 -- dependencies make sure that certain plugin
 -- is installed (and config is run) first and only then
 -- current plugin is installed and config is run
-        dependencies = {
-            "williamboman/mason.nvim"
-        },
+require("lazy").setup({{ import = "user.plugins"}}, {
+    checker = {
+        enabled = true,
+        notify = false
     },
-    { "nvim-tree/nvim-web-devicons" },
-    {
-        "nvim-lualine/lualine.nvim",
-        dependencies = {
-            "nvim-tree/nvim-web-devicons"
-        }
+    change_detection = {
+        notify = false
     },
-    { "nvim-tree/nvim-tree.lua" },
 })
