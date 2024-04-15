@@ -34,5 +34,6 @@ return {
         -- find string in current working directory
         k.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>")
         -- find string under cursor in current working directory
+        k.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>")
     end
 }
