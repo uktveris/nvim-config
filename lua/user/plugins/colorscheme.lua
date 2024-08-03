@@ -10,22 +10,22 @@ return {
     --     -- vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
     -- end
 
-    "rebelot/kanagawa.nvim",
-    config = function()
-        require("kanagawa").setup({
-            background = {
-                dark = "dragon",
-                light = "lotus"
-            }
-        })
-        vim.cmd.colorscheme("kanagawa")
-    end
-
-    -- "nyoom-engineering/oxocarbon.nvim",
+    -- "rebelot/kanagawa.nvim",
     -- config = function()
-    --     vim.opt.background = "dark"
-    --     vim.cmd.colorscheme("oxocarbon")
+    --     require("kanagawa").setup({
+    --         background = {
+    --             dark = "dragon",
+    --             light = "lotus"
+    --         }
+    --     })
+    --     vim.cmd.colorscheme("kanagawa")
     -- end
+
+    "nyoom-engineering/oxocarbon.nvim",
+    config = function()
+        vim.opt.background = "dark"
+        vim.cmd.colorscheme("oxocarbon")
+    end
 
     -- "Biscuit-Colorscheme/nvim",
     -- config = function()
