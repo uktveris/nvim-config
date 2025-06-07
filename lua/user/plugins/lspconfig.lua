@@ -62,32 +62,29 @@ return {
             })
         end
 
-        mason_lspconfig.setup_handlers({
-            function(server_name)
-                lspconfig[server_name].setup({
-                    capabilities = capabilities
-                })
-            end,
+        mason_lspconfig.setup()
 
-            -- custom config for lua language server
-            ["lua_ls"] = function()
-                -- configure lua server (with special settings)
-                lspconfig["lua_ls"].setup({
-                    capabilities = capabilities,
-                    settings = {
-                        Lua = {
-                            -- make the language server recognize "vim" global
-                            diagnostics = {
-                                globals = { "vim" },
-                            },
-                            completion = {
-                                callSnippet = "Replace",
-                            },
+        local servers = mason_lspconfig.get_installed_servers()
+
+        for _, server_name in ipairs(servers) do
+            local opts = {
+                capabilities = capabilities
+            }
+
+            if server_name == "lua_ls" then
+                opts.settings = {
+                    Lua = {
+                        diagnostics = {
+                            globals = {"vim"}
+                        },
+                        completion = {
+                            callSnippet = "Replace"
                         },
                     },
-                })
+                }
             end
-        })
 
+            lspconfig[server_name].setup(opts)
+        end
     end
 }
