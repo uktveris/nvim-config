@@ -39,3 +39,13 @@ o.termguicolors = true
 
 -- markdown stuff
 o.conceallevel = 0
+
+-- setting up diagnostics
+
+local diagostic_opts = {
+    -- shows inline diagnostics 
+    virtual_text = false,
+    -- shows diagnostics in a new virtual line below
+    virtual_lines = true,
+}
+vim.diagnostic.config(diagostic_opts)
