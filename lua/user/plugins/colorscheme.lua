@@ -21,11 +21,17 @@ return {
     --     vim.cmd.colorscheme("kanagawa")
     -- end
 
-    "nyoom-engineering/oxocarbon.nvim",
-    config = function()
-        vim.opt.background = "dark"
-        vim.cmd.colorscheme("oxocarbon")
-    end
+    -- "mcauley-penney/techbase.nvim",
+    -- config = function (_, opts)
+    --     vim.cmd.colorscheme("techbase")
+    -- end,
+    -- priority = 1000
+
+    -- "nyoom-engineering/oxocarbon.nvim",
+    -- config = function()
+    --     vim.opt.background = "dark"
+    --     vim.cmd.colorscheme("oxocarbon")
+    -- end
 
     -- "Biscuit-Colorscheme/nvim",
     -- config = function()
@@ -39,11 +45,11 @@ return {
     --         vim.cmd.colorscheme("rose-pine")
     --     end
 
-    -- "aktersnurra/no-clown-fiesta.nvim",
-    -- config = function()
-    --     require("no-clown-fiesta").setup({})
-    --     vim.cmd.colorscheme("no-clown-fiesta")
-    -- end
+    "aktersnurra/no-clown-fiesta.nvim",
+    config = function()
+        require("no-clown-fiesta").setup({})
+        vim.cmd.colorscheme("no-clown-fiesta")
+    end
 
     -- "nikolvs/vim-sunbather",
     -- config = function()

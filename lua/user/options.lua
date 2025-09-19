@@ -44,8 +44,8 @@ o.conceallevel = 0
 
 local diagostic_opts = {
     -- shows inline diagnostics 
-    virtual_text = false,
+    virtual_text = true,
     -- shows diagnostics in a new virtual line below
-    virtual_lines = true,
+    -- virtual_lines = true,
 }
 vim.diagnostic.config(diagostic_opts)
