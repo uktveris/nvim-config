@@ -20,7 +20,10 @@ return {
       config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
       -- lspconfig[server].setup(config)
       -- using new method with vim.lsp.enable()
-      vim.lsp.enable(server, config)
+
+      local k = vim.keymap
+      -- find files in current working directory
+      k.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
     end
   end
 

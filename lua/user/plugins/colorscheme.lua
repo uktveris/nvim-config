@@ -10,6 +10,22 @@ return {
     --     -- vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
     -- end
 
+    -- "slugbyte/lackluster.nvim",
+    -- lazy = false,
+    -- priority = 1000,
+    -- init = function()
+    --     -- vim.cmd.colorscheme("lackluster")
+    --     -- vim.cmd.colorscheme("lackluster-hack") -- my favorite
+    --     vim.cmd.colorscheme("lackluster-mint")
+    -- end,
+
+    'stevedylandev/darkmatter-nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+    vim.cmd('colorscheme darkmatter')
+    end,
+
     -- "rebelot/kanagawa.nvim",
     -- config = function()
     --     require("kanagawa").setup({
@@ -21,39 +37,16 @@ return {
     --     vim.cmd.colorscheme("kanagawa")
     -- end
 
-    -- "mcauley-penney/techbase.nvim",
-    -- config = function (_, opts)
-    --     vim.cmd.colorscheme("techbase")
-    -- end,
-    -- priority = 1000
-
-    -- "nyoom-engineering/oxocarbon.nvim",
-    -- config = function()
-    --     vim.opt.background = "dark"
-    --     vim.cmd.colorscheme("oxocarbon")
-    -- end
-
     -- "Biscuit-Colorscheme/nvim",
     -- config = function()
     --     require("biscuit").setup({})
     --     vim.cmd.colorscheme("biscuit")
     -- end
 
-    -- "rose-pine/neovim",
-    --     config = function()
-    --         require("rose-pine").setup({})
-    --         vim.cmd.colorscheme("rose-pine")
-    --     end
-
-    "aktersnurra/no-clown-fiesta.nvim",
-    config = function()
-        require("no-clown-fiesta").setup({})
-        vim.cmd.colorscheme("no-clown-fiesta")
-    end
-
-    -- "nikolvs/vim-sunbather",
+    -- "aktersnurra/no-clown-fiesta.nvim",
     -- config = function()
-    --     vim.cmd.colorscheme("sunbather")
+    --     require("no-clown-fiesta").setup({})
+    --     vim.cmd.colorscheme("no-clown-fiesta")
     -- end
 
     -- "Domeee/mosel.nvim",
