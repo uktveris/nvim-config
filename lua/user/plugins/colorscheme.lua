@@ -19,12 +19,21 @@ return {
     --     vim.cmd.colorscheme("lackluster-mint")
     -- end,
 
-    'stevedylandev/darkmatter-nvim',
+    -- 'stevedylandev/darkmatter-nvim',
+    -- lazy = false,
+    -- priority = 1000,
+    -- config = function()
+    -- vim.cmd('colorscheme darkmatter')
+    -- end,
+
+    "vague-theme/vague.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-    vim.cmd('colorscheme darkmatter')
-    end,
+    require("vague").setup({
+    })
+    vim.cmd("colorscheme vague")
+    end
 
     -- "rebelot/kanagawa.nvim",
     -- config = function()

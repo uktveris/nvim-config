@@ -25,6 +25,8 @@ k("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+k('n', '<Leader>d', ':lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
+
 -- normal mode
 
 -- highliting
