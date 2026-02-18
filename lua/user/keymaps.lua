@@ -25,9 +25,13 @@ k("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-k('n', '<Leader>d', ':lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
+-- k('n', '<Leader>d', ':lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
 
 -- normal mode
+
+-- show full error message
+-- k('n', '<leader>d', vim.diagnostic.open_float, opts)
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, opts)
 
 -- highliting
 k('n', '*', '*zz', opts)

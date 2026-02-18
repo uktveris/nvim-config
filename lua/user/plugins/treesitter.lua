@@ -6,7 +6,7 @@ return {
     branch = "main",
     config = function()
         require("nvim-treesitter").setup({
-            ensure_installed = {"c", "lua", "vim", "vimdoc", "query"},
+            ensure_installed = {"c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline"},
             -- auto installs new parser when opening
             -- a new file with new language
             -- (never encountered by treesitter before
