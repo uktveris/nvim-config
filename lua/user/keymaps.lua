@@ -65,6 +65,9 @@ k('n', '<C-Right>', ':vertical resize -2<CR>', opts)
 k('n', '<S-z>', ':vsplit<CR>', opts)
 k('n', '<S-x>', ':split<CR>', opts)
 
+-- LSP: go to definition using telescope (works across files)
+k('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', opts)
+
 -- visual mode
 k('v', '<', '<gv', opts)
 k('v', '>', '>gv', opts)

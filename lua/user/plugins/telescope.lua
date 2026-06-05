@@ -3,10 +3,18 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
+        {
+            "nvim-telescope/telescope-fzf-native.nvim",
+            build = "make",
+            cond = function()
+                return vim.fn.executable("make") == 1
+            end,
+        },
     },
     config = function()
         local telescope = require("telescope")
         local actions = require("telescope.actions")
+
 
         telescope.setup({
             defaults = {
@@ -25,6 +33,7 @@ return {
             }
         })
 
+        pcall(require("telescope").load_extension, "fzf")
         -- setting keymaps to navigate telescope
         local k = vim.keymap
         -- find files in current working directory
