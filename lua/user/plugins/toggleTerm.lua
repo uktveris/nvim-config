@@ -16,9 +16,8 @@ return {
             direction = "horizontal",
         })
         local k = vim.keymap
-        k.set("n", "<leader>t1", ":1ToggleTerm<CR>", {noremap = true, silent = true})
-        k.set("n", "<leader>t2", ":2ToggleTerm<CR>", {noremap = true, silent = true})
-        k.set('n', '<leader>ta', ':ToggleTermToggleAll<CR>', {noremap = true, silent = true})
+        k.set("n", "<leader>t1", ":1ToggleTerm<CR>", { noremap = true, silent = true })
+        k.set("n", "<leader>t2", ":2ToggleTerm<CR>", { noremap = true, silent = true })
+        k.set('n', '<leader>ta', ':ToggleTermToggleAll<CR>', { noremap = true, silent = true })
     end
 }
-

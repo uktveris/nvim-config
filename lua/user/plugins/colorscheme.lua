@@ -30,9 +30,9 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-    require("vague").setup({
-    })
-    vim.cmd("colorscheme vague")
+        require("vague").setup({
+        })
+        vim.cmd("colorscheme vague")
     end
 
     -- "rebelot/kanagawa.nvim",
@@ -63,4 +63,3 @@ return {
     --     vim.cmd.colorscheme("mosel")
     -- end
 }
-

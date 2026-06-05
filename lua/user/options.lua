@@ -43,7 +43,7 @@ o.conceallevel = 0
 -- setting up diagnostics
 
 local diagostic_opts = {
-    -- shows inline diagnostics 
+    -- shows inline diagnostics
     virtual_text = true,
     -- shows diagnostics in a new virtual line below
     -- virtual_lines = true,

@@ -35,4 +35,3 @@ return {
         k.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
     end
 }
-
