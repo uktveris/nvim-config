@@ -7,10 +7,11 @@ return {
         "nvim-tree/nvim-web-devicons"
     },
     config = function()
-        -- require("lualine").setup({
-        --     options = {
-        --         theme = "lackluster"
-        --     }
-        -- })
+        require("lualine").setup({
+            options = {
+                -- theme = "lackluster"
+                theme = "vague"
+            }
+        })
     end
 }
