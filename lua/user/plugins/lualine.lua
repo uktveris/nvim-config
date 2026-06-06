@@ -8,10 +8,9 @@ return {
     },
     config = function()
         require("lualine").setup({
-            options = {
-                -- theme = "lackluster"
-                theme = "vague"
-            }
+            -- options = {
+            --     theme = "vague"
+            -- }
         })
     end
 }
